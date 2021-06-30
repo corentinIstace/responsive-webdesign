@@ -1,0 +1,55 @@
+
+body{
+  background-color: red;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  font-size: 50%;
+}
+div{
+  border: 3px solid black;
+  margin: 15px 0px 15px 0px;
+  background-color: lightgrey;
+  padding: 10px;
+}
+#small{  
+  background-color: lightgrey;
+}
+@media only screen and (min-width: 500px) {
+    body {
+      background-color: green;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    div{
+      margin: 1%;
+    }
+    #small{
+      width: 60%;
+    }
+    #medium{
+      width: 28%;
+    }
+    #large{
+      width: 100%;
+    }
+    h1{
+      font-size: 75%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    body {
+      background-color: blue;
+      display: flex;
+      flex-direction: row;
+    }
+    div{
+      width: 28%!important;
+    }
+    h1{
+      font-size: 100%;
+    }
+}
+
